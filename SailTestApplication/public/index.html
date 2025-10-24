@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Ιστιοπλοΐας</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Sailboat Logo -->
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Water waves -->
+                    <path d="M 0 75 Q 12.5 70, 25 75 T 50 75 T 75 75 T 100 75 L 100 100 L 0 100 Z"
+                          fill="rgba(255,255,255,0.2)"/>
+                    <!-- Boat hull -->
+                    <path d="M 35 70 L 50 80 L 65 70 Z"
+                          fill="white" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"/>
+                    <!-- Mast -->
+                    <line x1="50" y1="70" x2="50" y2="25"
+                          stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Main sail -->
+                    <path d="M 50 30 L 50 65 L 30 65 Z"
+                          fill="rgba(255,255,255,0.9)" stroke="white" stroke-width="1.5"/>
+                    <!-- Front sail (jib) -->
+                    <path d="M 50 35 L 50 60 L 68 60 Z"
+                          fill="rgba(255,255,255,0.75)" stroke="white" stroke-width="1.5"/>
+                    <!-- Flag on top -->
+                    <path d="M 50 25 L 58 28 L 50 31 Z"
+                          fill="#FFD700"/>
+                </svg>
+            </div>
+
+            <h1 id="quiz-title">Τεστ Γνώσεων Ιστιοπλοΐας</h1>
+            <div class="timer-container">
+                <span class="timer-label">⏱️ Υπολειπόμενος Χρόνος:</span>
+                <span id="timer" class="timer">60:00</span>
+            </div>
+        </header>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" class="quiz-container">
+            <!-- Progress Indicator -->
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div class="question-counter">
+                Ερώτηση <span id="current-question-number">1</span> από <span id="total-questions">30</span>
+            </div>
+
+            <!-- Question Section -->
+            <div class="question-section">
+                <h2 id="question-text" class="question-text">Φόρτωση ερώτησης...</h2>
+            </div>
+
+            <!-- Options Section -->
+            <div id="options-container" class="options-container">
+                <!-- Options will be dynamically inserted here -->
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="nav-btn" disabled>← Προηγούμενη</button>
+                <button id="next-btn" class="nav-btn">Επόμενη →</button>
+                <button id="submit-btn" class="submit-btn" style="display: none;">✓ Υποβολή Απαντήσεων</button>
+            </div>
+        </div>
+
+        <!-- Results Container (Hidden Initially) -->
+        <div id="results-container" class="results-container" style="display: none;">
+            <div class="results-header">
+                <h2 id="results-title">Αποτελέσματα Quiz</h2>
+                <div id="results-summary" class="results-summary"></div>
+            </div>
+
+            <div id="results-details" class="results-details">
+                <!-- Detailed results will be inserted here -->
+            </div>
+
+            <button id="restart-btn" class="restart-btn">🔄 Επανεκκίνηση Quiz</button>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>⛵ Φόρτωση δεδομένων...</p>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p>Αυτή η εφαρμογή είναι ένα Proof of Concept (POC) και δεν αποτελεί επίσημη εφαρμογή.</p>
+            <p>Το υλικό των ερωτήσεων χορηγήθηκε από βιβλίο του Ναυτικού Ομίλου Θεσσαλονίκης.</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

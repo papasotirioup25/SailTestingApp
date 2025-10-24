@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sailing-quiz:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sailing-quiz-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - sailing-quiz-network
+
+networks:
+  sailing-quiz-network:
+    driver: bridge
