@@ -27,7 +27,7 @@ A modern, interactive web application for sailing theory exam preparation. Built
 
 ## 🎯 Features
 
-- ✅ **Random Selection** - 30 different questions per test (randomly selected from pool)
+- ✅ **Random Selection** - 35 different questions per test (randomly selected from pool)
 - ✅ **60-Minute Timer** - Visual countdown with warning when time is running low
 - ✅ **Randomized Questions & Answers** - Different experience every time
 - ✅ **Progress Tracking** - Visual progress bar showing completion status
