@@ -155,9 +155,9 @@ Edit `public/data/quiz_data.json`:
 ```json
 {
   "quiz_title": "Τεστ Γνώσεων Ιστιοπλοΐας",
-  "time_limit_seconds": 3600,    // 60 minutes (in seconds)
-  "passing_score": 24,             // 24/30 = 80%
-  "total_questions": 30,          // Questions shown per test
+  "time_limit_seconds": 2400,    // 40 minutes (in seconds)
+  "passing_score": 29,           
+  "total_questions": 35,          // Questions shown per test
   "questions": [...]              // questions in pool
 }
 ```
