@@ -226,10 +226,10 @@ Tested and working on:
 
 ## 🎓 Quiz Rules
 
-- **Duration:** 60 minutes (3600 seconds)
-- **Question Pool:** 120+ questions available
-- **Questions Per Test:** 10 (randomly selected from pool)
-- **Passing Score:** 8 correct answers (80%)
+- **Duration:** 40 minutes
+- **Question Pool:** 400+ questions available
+- **Questions Per Test:** 35 (randomly selected from pool)
+- **Passing Score:** 29 correct answers (80%)
 - **Question Order:** Randomized for each session
 - **Answer Options:** Randomized for each session
 - **Navigation:** Allowed (Previous/Next buttons)
